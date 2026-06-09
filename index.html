@@ -1,58 +1,51 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>x1han</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        padding: 24px;
-        background: #f7f7f5;
-        color: #222;
-      }
-
-      main {
-        width: min(680px, 100%);
-      }
-
-      h1 {
-        margin: 0 0 12px;
-        font-size: clamp(2rem, 6vw, 4rem);
-        line-height: 1;
-      }
-
-      p {
-        margin: 0;
-        color: #555;
-        font-size: 1.1rem;
-        line-height: 1.6;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          background: #151515;
-          color: #f1f1ed;
-        }
-
-        p {
-          color: #bbb;
-        }
-      }
-    </style>
+    <meta
+      name="description"
+      content="Personal site for bioinformatics, computational biology, and AI agent work."
+    >
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="x1han home">x1han</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="bicb.html">BI &amp; CB</a>
+        <a href="ai.html">AI</a>
+      </nav>
+    </header>
+
     <main>
-      <h1>x1han</h1>
-      <p>Personal site.</p>
+      <section class="hero" aria-labelledby="home-title">
+        <p class="eyebrow">Bioinformatics / Computational Biology / AI Agents</p>
+        <h1 id="home-title">Research software for biological data and agentic workflows.</h1>
+        <p class="lead">
+          I build tools at the intersection of biological data analysis,
+          computational research systems, and applied AI automation.
+        </p>
+      </section>
+
+      <section class="section-grid" aria-label="Site sections">
+        <a class="feature-link" href="bicb.html">
+          <span class="feature-label">BI &amp; CB</span>
+          <strong>Bioinformatics &amp; Computational Biology</strong>
+          <span>
+            Software, pipelines, and research tools for biological data analysis.
+          </span>
+        </a>
+
+        <a class="feature-link" href="ai.html">
+          <span class="feature-label">AI</span>
+          <strong>AI Agents &amp; Research Automation</strong>
+          <span>
+            Agent systems, workflow automation, and applied AI tooling for research.
+          </span>
+        </a>
+      </section>
     </main>
   </body>
 </html>
