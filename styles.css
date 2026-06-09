@@ -165,6 +165,13 @@ h1 {
   gap: 18px;
 }
 
+.repo-list {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
 .repo-card {
   min-height: 270px;
   padding: 24px;
@@ -174,10 +181,23 @@ h1 {
   gap: 28px;
 }
 
+.repo-card-wide {
+  min-height: 0;
+  padding: 28px;
+}
+
 .repo-card h2 {
   margin-bottom: 12px;
   font-size: 1.25rem;
   line-height: 1.25;
+}
+
+.repo-card h2 a {
+  border-bottom: 1px solid transparent;
+}
+
+.repo-card h2 a:hover {
+  border-color: var(--accent);
 }
 
 .repo-card p:not(.repo-kicker) {
@@ -227,7 +247,8 @@ h1 {
     margin-top: 48px;
   }
 
-  .repo-grid {
+  .repo-grid,
+  .repo-list {
     margin-top: 40px;
   }
 }
