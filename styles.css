@@ -66,6 +66,22 @@ a {
   border-color: var(--accent);
 }
 
+.nav-github {
+  display: inline-flex;
+  align-items: center;
+  color: var(--muted);
+  border-bottom: 0;
+}
+
+.nav-github svg {
+  display: block;
+}
+
+.nav-github:hover {
+  color: var(--text);
+  border-bottom: 0;
+}
+
 main {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
